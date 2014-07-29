@@ -1,0 +1,19 @@
+{
+  "name": "geekles.com",
+  "version": "0.0.0",
+  "homepage": "https://github.com/geekles/geekles.github.io",
+  "authors": [
+    "Shawn Hansen <shawn.hansen@gmail.com>"
+  ],
+  "description": "CSS for geekles.com",
+  "main": "geekles.scss",
+  "license": "Apache",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
