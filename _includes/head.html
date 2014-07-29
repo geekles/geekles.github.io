@@ -1,13 +1,39 @@
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content="{{ site.description }}">
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="{{ "/css/geekles.min.css" | prepend: site.baseurl }}">
-    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0">
+
+<title>{{ page.title }} &ndash; Shawn Hansen &ndash; HTML, CSS, JS, and more</title>
+
+<!-- Prefetch DNS for external assets (Twitter widgets etc). -->
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//themes.googleusercontent.com">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,600italic,600,300">
+<link rel="stylesheet" href="/css/geekles.min.css">
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="dns-prefetch" href="//platform.twitter.com">
+<link rel="dns-prefetch" href="//www.google-analytics.com">
+<link rel="dns-prefetch" href="https://twitter.com">
+<link rel="dns-prefetch" href="https://cdn.syndication.twimg.com">
+
+<!-- Prerender work page -->
+<link rel="prerender" href="http://geekles.com/work/">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@geekles">
+<meta name="twitter:domain" content="geekles.com">
+<meta name="twitter:creator" content="@geekles">
+<meta name="twitter:title" content="{{ page.title }} – Shawn Hansen">
+<meta name="twitter:image:src" content="/logo.png">
+{% if page.meta %}
+    <meta name="twitter:description" content="{{ page.meta }}">
+{% endif %}
+
+<link rel="shortcut icon" href="/icon.png">
+<link rel="apple-touch-icon-precomposed" href="/icon.png">
+<meta name="apple-mobile-web-app-title" content="geekles">
+<meta name="description" content="Articles on HTML, CSS, front-end architecture, scalability and performance.">
+<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
 </head>
