@@ -41,8 +41,8 @@ a:visited { color: #663399; }
 /* Site header */
 
 .site-header {
-  border-top: 5px solid #333;
-  border-bottom: 1px solid #663399;
+  border-top: 5px solid #663399;
+  border-bottom: 1px solid #333;
   min-height: 56px;
   background-color: white;
 }
