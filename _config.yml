@@ -1,12 +1,26 @@
-# Site settings
-title: Shawn Hansen
-email: shawn.hansen@gmail.com
-description: "Front-end Architect"
-baseurl: ""
-url: "http://geekles.com"
-twitter_username: geekles
-github_username:  geekles
+# Dependencies
+markdown:            redcarpet
+highlighter:         pygments
 
-# Build settings
-markdown: kramdown
-permalink: pretty
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+relative_permalinks: true
+
+# Setup
+title:               Shawn Hansen
+tagline:             'Coding and Coffee'
+description:         'General musings on code and the web.'
+url:                 http://geekles.com
+baseurl:             /
+paginate:            5
+
+# About/contact
+author:
+  name:              Shawn Hansen
+  url:               https://twitter.com/geekles
+  email:             shawn.hansen@gmail.com
+
+# Custom vars
+version:             1.0.0
