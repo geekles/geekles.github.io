@@ -12,7 +12,7 @@ relative_permalinks: true
 title:               Shawn Hansen
 tagline:             'Coding and Coffee'
 description:         'General musings on code and the web.'
-url:                 http://geekles.com
+url:                 http://geekles.github.io
 baseurl:             /
 paginate:            5
 
